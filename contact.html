@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tuguang Logistics - Get in touch with our team for logistics solutions, partnerships, and support. Business: yanlei@tuguanglog.com, Support: support@tuguanglog.com">
+    <meta name="keywords" content="contact logistics company, logistics support, business inquiry, customer service">
+    <meta name="author" content="Zhengzhou Tuguang Logistics Technology Co., Ltd.">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us | Tuguang Logistics</title>
+    <link rel="canonical" href="https://tuguanglog.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <style>
+        .faq-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .faq-question svg {
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .faq-answer {
+            color: #64748b;
+            line-height: 1.7;
+            padding-left: 36px;
+        }
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .hours-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+        .hours-card .hours-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #0066ff, #00aaff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .hours-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .hours-card p {
+            color: #64748b;
+            font-size: 1rem;
+        }
+        .consult-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .consult-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .consult-card:hover {
+            transform: translateY(-6px);
+            border-color: #0066ff;
+            box-shadow: 0 12px 32px rgba(0,102,255,0.15);
+        }
+        .consult-card .card-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .consult-card h4 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .consult-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .response-promise {
+            background: linear-gradient(135deg, #0066ff, #00aaff);
+            color: white;
+            padding: 48px;
+            border-radius: 20px;
+            margin-top: 48px;
+            text-align: center;
+        }
+        .response-promise h3 {
+            font-size: 1.75rem;
+            margin-bottom: 16px;
+        }
+        .response-promise p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .map-section {
+            height: 400px;
+            background: #e2e8f0;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 48px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .map-placeholder {
+            text-align: center;
+            color: #64748b;
+        }
+        .map-placeholder svg {
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+        @media (max-width: 768px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .response-promise {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 50 50"><defs><linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0066ff"/><stop offset="100%" style="stop-color:#00aaff"/></linearGradient></defs><circle cx="25" cy="25" r="23" fill="url(#lg)"/><path d="M15 30 L25 15 L35 30 L30 30 L25 22 L20 30 Z" fill="white"/><circle cx="25" cy="33" r="4" fill="white"/></svg>
+                <span class="logo-text">Tuguang<span>Log</span></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="culture.html" class="nav-link">Culture</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Contact Us</div>
+                <h1 class="hero-title">Get in <span class="text-gradient">Touch</span></h1>
+                <p class="hero-description">Have questions about our services? Want to discuss a partnership? We'd love to hear from you. Reach out to our team and we'll get back to you as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Consultation Cards -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Quick Consultation</span>
+                <h2 class="section-title">How Can We <span class="text-gradient">Help You?</span></h2>
+                <p class="section-description">Choose the consultation type that best fits your needs, and we'll connect you with the right team.</p>
+            </div>
+            <div class="consult-cards reveal">
+                <div class="consult-card" onclick="document.getElementById('subject').value='freight'; document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'});">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h4>Freight Services</h4>
+                    <p>Air, sea, and land freight solutions tailored to your business needs</p>
+                </div>
+                <div class="consult-card" onclick="document.getElementById('subject').value='warehousing'; document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'});">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h4>Warehousing</h4>
+                    <p>Storage solutions with inventory management and distribution</p>
+                </div>
+                <div class="consult-card" onclick="document.getElementById('subject').value='supply-chain'; document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'});">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    </div>
+                    <h4>Supply Chain</h4>
+                    <p>End-to-end supply chain optimization and consulting</p>
+                </div>
+                <div class="consult-card" onclick="document.getElementById('subject').value='mobile-app'; document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'});">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    </div>
+                    <h4>Mobile App Support</h4>
+                    <p>Technical support and guidance for our logistics app</p>
+                </div>
+                <div class="consult-card" onclick="document.getElementById('subject').value='partnership'; document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'});">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Partnership</h4>
+                    <p>Strategic partnerships and business collaboration opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h2>Contact Information</h2>
+                    <p>We're here to help with all your logistics needs. Don't hesitate to reach out to us through any of the channels below.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div class="contact-text">
+                            <h4>Office Address</h4>
+                            <p>No. 154, 10th Floor, Unit 1, Building 1, No. 89 Hongye Road, High-tech Industrial Development Zone, Zhengzhou</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                        <div class="contact-text">
+                            <h4>Business Inquiries (Key Accounts)</h4>
+                            <p><a href="mailto:yanlei@tuguanglog.com">yanlei@tuguanglog.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <div class="contact-text">
+                            <h4>Customer Support</h4>
+                            <p><a href="mailto:support@tuguanglog.com">support@tuguanglog.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <div class="contact-text">
+                            <h4>Website</h4>
+                            <p><a href="https://tuguanglog.com" target="_blank" rel="noopener noreferrer">tuguanglog.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours -->
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+                        <div class="contact-text">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM (GMT+8)<br>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/tuguanglog" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="https://twitter.com/tuguanglog" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                            </a>
+                            <a href="https://www.facebook.com/tuguanglog" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/tuguanglog" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" action="#" method="POST">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company Ltd.">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="freight">Freight Services Inquiry</option>
+                                <option value="warehousing">Warehousing Solutions</option>
+                                <option value="supply-chain">Supply Chain Consulting</option>
+                                <option value="mobile-app">Mobile App Support</option>
+                                <option value="business">Business Partnership</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="career">Career Opportunities</option>
+                                <option value="media">Media & Press</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we help you? Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Promise -->
+    <section class="section">
+        <div class="container">
+            <div class="response-promise reveal">
+                <h3>Our Response Commitment</h3>
+                <p>We are committed to providing timely responses to all inquiries. Expect a response within <strong>24 hours</strong> during business days. For urgent matters, please indicate in your message and we'll prioritize accordingly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Find Us</span>
+                <h2 class="section-title">Our <span class="text-gradient">Location</span></h2>
+                <p class="section-description">Visit our headquarters in Zhengzhou, the heart of China's logistics network.</p>
+            </div>
+            <div class="map-section reveal">
+                <div class="map-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;">Zhengzhou Tuguang Logistics Technology Co., Ltd.</p>
+                    <p style="font-size: 0.95rem;">High-tech Industrial Development Zone, Zhengzhou, China</p>
+                    <a href="https://maps.google.com/?q=High-tech+Industrial+Development+Zone+Zhengzhou+China" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 20px; display: inline-flex; align-items: center; gap: 8px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                        Open in Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="section-description">Find quick answers to common questions about our services and processes.</p>
+            </div>
+            <div class="faq-grid reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        What regions do you serve?
+                    </div>
+                    <div class="faq-answer">
+                        We provide logistics services across over 50 countries worldwide, with strong coverage across Asia, Europe, North America, and South America. Our partnerships enable us to offer comprehensive solutions regardless of your location.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        How can I track my shipment?
+                    </div>
+                    <div class="faq-answer">
+                        You can track your shipments in real-time through our mobile app, available on both iOS and Android. Simply log in with your credentials and access the tracking dashboard for instant updates on your cargo location and status.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        What types of cargo do you handle?
+                    </div>
+                    <div class="faq-answer">
+                        We handle a wide range of cargo including general merchandise, hazardous materials (with proper certifications), temperature-sensitive goods, oversized cargo, and high-value items. Contact us for specific requirements.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        How do I start a partnership?
+                    </div>
+                    <div class="faq-answer">
+                        To explore partnership opportunities, please fill out the contact form selecting "Partnership" as your subject. Our business development team will review your inquiry and schedule a call to discuss potential collaboration.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        What are your warehouse locations?
+                    </div>
+                    <div class="faq-answer">
+                        We operate over 200 distribution centers globally, with major hubs in China (Zhengzhou, Shanghai, Shenzhen), Europe (Germany, Netherlands), and North America (Los Angeles, New York). Contact us for specific warehouse availability.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Do you offer custom logistics solutions?
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we specialize in tailored logistics solutions. Our team works closely with clients to design custom supply chain strategies that meet specific business needs, budget requirements, and timeline constraints.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Support Hours</span>
+                <h2 class="section-title">When We're <span class="text-gradient">Available</span></h2>
+                <p class="section-description">Know when you can reach us and what to expect at different times.</p>
+            </div>
+            <div class="hours-grid reveal">
+                <div class="hours-card">
+                    <div class="hours-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday<br>9:00 AM - 6:00 PM (GMT+8)</p>
+                </div>
+                <div class="hours-card">
+                    <div class="hours-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h4>Email Support</h4>
+                    <p>24/7 Response<br>Within 24 hours</p>
+                </div>
+                <div class="hours-card">
+                    <div class="hours-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h4>Mobile App Support</h4>
+                    <p>24/7 Self-Service<br>+ Chat support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Global Presence</span>
+                <h2 class="section-title">Serving clients <span class="text-gradient">Worldwide</span></h2>
+                <p class="section-description">With headquarters in Zhengzhou and partnerships across the globe, we're able to serve clients in over 50 countries.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                    <div class="stat-value counter-value" data-target="1">1</div>
+                    <div class="stat-label">Headquarters in China</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                    <div class="stat-value counter-value" data-target="50">50+</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+                    <div class="stat-value counter-value" data-target="200">200+</div>
+                    <div class="stat-label">Distribution Centers</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg viewBox="0 0 50 50"><defs><linearGradient id="flg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0066ff"/><stop offset="100%" style="stop-color:#00aaff"/></linearGradient></defs><circle cx="25" cy="25" r="23" fill="url(#flg)"/><path d="M15 30 L25 15 L35 30 L30 30 L25 22 L20 30 Z" fill="white"/><circle cx="25" cy="33" r="4" fill="white"/></svg>
+                        <span class="logo-text">Tuguang<span>Log</span></span>
+                    </a>
+                    <p>Zhengzhou Tuguang Logistics Technology Co., Ltd. - Your trusted partner in global logistics solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/tuguanglog" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                        <a href="https://twitter.com/tuguanglog" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="culture.html">Culture</a>
+                        <a href="news.html">News</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <nav class="footer-links">
+                        <a href="services.html#freight">Freight Transportation</a>
+                        <a href="services.html#warehousing">Warehousing</a>
+                        <a href="services.html#supply-chain">Supply Chain</a>
+                        <a href="services.html#mobile-app">Mobile App</a>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="footer-links">
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem;">Business: yanlei@tuguanglog.com</p>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem;">Support: support@tuguanglog.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Zhengzhou Tuguang Logistics Technology Co., Ltd. All rights reserved.</p>
+                <nav class="footer-legal">
+                    <a href="privacy-policy.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Privacy Policy</a>
+                    <a href="terms-of-service.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
